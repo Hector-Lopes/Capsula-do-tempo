@@ -1,14 +1,11 @@
-import { Button } from "@/components/Buttom"
+
 
 
 export default function Home() {
   return (
-    <h1>ola
-      <Button title="HECTOR"></Button>
-      <Button title="LUCAS"></Button>
-      <Button title="DIOGO"></Button>
-     
-    </h1>
+    <div className=" h-screen bg-zinc-50">
+      oi 
+  </div>
  
     )
 }
