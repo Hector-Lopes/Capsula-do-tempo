@@ -1,7 +1,8 @@
+import { Bai_Jamjuree, Roboto, Roboto_Flex as roboto } from 'next/font/google'
 import './globals.css'
-import { Inter } from 'next/font/google'
-import React from 'react'
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({ subsets: ['latin'] variable:'--font-roboto'})
+const Bai_Jamjuree = bai_Jamjuree({ subsets: ['latin'],weight'700',variable:'font--bai--jamjuree'  })
+
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,10 +13,10 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
+})          {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+          <html lang="en">
+      <body className={`${roboto.variable} ${Bai_Jamjuree.variable} font-sans`}>{children}</body>
+        </html>
+)
 }
